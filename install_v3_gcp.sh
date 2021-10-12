@@ -17,6 +17,8 @@ docker_install
 
 file_open_ulimit()
 {
+	sudo echo "* soft nproc 65535" >> /etc/security/limits.conf
+	sudo echo "* hard nproc 65535" >> /etc/security/limits.conf
 	sudo echo "ulimit -SHn 65535" >> /etc/profile
 	sudo source /etc/profile
 }
