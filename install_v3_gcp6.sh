@@ -19,3 +19,5 @@ sudo docker create --name st05 --restart=always -p 7570:7170 -p 7571:7171 -p 188
 sudo docker create --name st06 --restart=always -p 7670:7170 -p 7671:7171 -p 1886:1883 -v $(cd $HOME/.streamrDocker06; pwd):/root/.streamr streamr/broker-node:testnet 
 
 sudo docker start st01 st02 st03 st04 st05 st06
+
+curl ip.sb
