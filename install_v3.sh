@@ -29,11 +29,11 @@ file_open_ulimit()
 
 file_open_ulimit
 
-
-
 sudo docker pull streamr/broker-node:testnet
 
 mkdir ~/.streamrDocker01 ~/.streamrDocker02 ~/.streamrDocker03 ~/.streamrDocker04 ~/.streamrDocker05 ~/.streamrDocker06
+
+curl ip.sb
 
 sudo docker run -it -v $(cd ~/.streamrDocker01; pwd):/root/.streamr streamr/broker-node:testnet bin/config-wizard 
 sudo docker run -it -v $(cd ~/.streamrDocker02; pwd):/root/.streamr streamr/broker-node:testnet bin/config-wizard
