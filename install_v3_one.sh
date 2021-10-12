@@ -31,6 +31,8 @@ sudo docker pull streamr/broker-node:testnet
 
 mkdir ~/.streamrDocker01
 
+curl ip.sb
+
 sudo docker run -it -v $(cd ~/.streamrDocker01; pwd):/root/.streamr streamr/broker-node:testnet bin/config-wizard 
 sudo docker container prune
 
